@@ -11,3 +11,9 @@ describe('Calculator', () => {
     expect(add('1')).toBe(1); // Fails: add() doesn't exist yet
   });
 });
+
+describe('Calculator', () => {
+  test('should return sum of two numbers for two input', () => {
+    expect(add('2,4')).toBe(6); // Fails: add() doesn't exist yet
+  });
+});
