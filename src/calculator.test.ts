@@ -23,3 +23,9 @@ describe('Calculator', () => {
     expect(add('2,4,1')).toBe(7); // Fails: add() doesn't exist yet
   });
 });
+
+describe('Calculator', () => {
+  test('should return sum of all numbers for multiple inputs', () => {
+    expect(add('2,4,1,4,5')).toBe(16); // Fails: add() doesn't exist yet
+  });
+});
