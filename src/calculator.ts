@@ -5,7 +5,7 @@ export function add(numbers:string){
     if (numbers.length === 1) return parseInt(numbers)
 
     const inputs = numbers.split(',')
-    console.log(inputs)
-    return parseInt(inputs[0])+ parseInt(inputs[1]
-)    
+
+    return inputs.map(number => parseInt(number)).reduce((a, b) => a + b, 0)
+       
 }
