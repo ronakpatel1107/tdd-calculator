@@ -17,3 +17,9 @@ describe('Calculator', () => {
     expect(add('2,4')).toBe(6); // Fails: add() doesn't exist yet
   });
 });
+
+describe('Calculator', () => {
+  test('should return sum of three numbers for two input', () => {
+    expect(add('2,4,1')).toBe(7); // Fails: add() doesn't exist yet
+  });
+});
