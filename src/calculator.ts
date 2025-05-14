@@ -21,5 +21,5 @@ export function add(numbers:string){
         throw new Error(`negative numbers not allowed`);
     }
 
-    return parsedNumbers.reduce((a, b) => a + b, 0);
+    return parsedNumbers.filter(n=>n<1000).reduce((a, b) => a + b, 0);
     }
