@@ -35,3 +35,9 @@ describe('Calculator', () => {
     expect(add('2,\n3')).toBe(5); 
   });
 });
+
+describe('Calculator', () => {
+  test('should allow new line and return 6', () => {
+    expect(add('2\n3,1')).toBe(6); 
+  });
+});
