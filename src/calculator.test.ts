@@ -47,3 +47,10 @@ describe('Calculator', () => {
     expect(add('//;\n1;2')).toBe(3); 
   });
 });
+
+
+describe('Calculator', () => {
+  test('"should throw an exception for a negative number', () => {
+    expect(add('2,-4')).toThrow("negative numbers not allowed: -4");
+  });
+});
