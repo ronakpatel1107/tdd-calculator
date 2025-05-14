@@ -32,7 +32,7 @@ describe('Calculator', () => {
 
 describe('Calculator', () => {
   test('should return 5', () => {
-    expect(add('2,\n3')).toBe(5); 
+    expect(add('2\n3')).toBe(5); 
   });
 });
 
