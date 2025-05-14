@@ -14,7 +14,7 @@ export function add(numbers:string){
 
     const parsedNumbers = inputs
         .split(delimiterPattern)
-        .map(number => parseInt(number));
+        .map(number => parseInt(number)).filter(n => !isNaN(n));
 
     const negativeNumbers = parsedNumbers.filter(n => n < 0);
     if (negativeNumbers.length > 0) {
