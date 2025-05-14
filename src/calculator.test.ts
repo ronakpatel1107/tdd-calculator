@@ -41,3 +41,9 @@ describe('Calculator', () => {
     expect(add('2\n3,1')).toBe(6); 
   });
 });
+
+describe('Calculator', () => {
+  test('should handle custom delimiters and return the sum of all the numbers', () => {
+    expect(add('//;\n1;2"')).toBe(3); 
+  });
+});
