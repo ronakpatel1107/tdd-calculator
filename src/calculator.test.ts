@@ -60,3 +60,9 @@ describe('Calculator', () => {
     expect(()=>add('-1')).toThrow("negative numbers not allowed");
   });
 });
+
+describe('Calculator', () => {
+  test('should throw an exception for a negative number', () => {
+    expect(()=>add('//;\n-1;2')).toThrow("negative numbers not allowed");
+  });
+});
