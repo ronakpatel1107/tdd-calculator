@@ -21,3 +21,4 @@ The calculator was built iteratively:
 - Evolved to handle multiple numbers
 - Implemented custom delimiters
 - Added validation rules via Regular Expression
+- Evolve to handle number greater than 1000
