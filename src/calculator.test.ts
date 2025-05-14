@@ -50,7 +50,13 @@ describe('Calculator', () => {
 
 
 describe('Calculator', () => {
-  test('"should throw an exception for a negative number', () => {
+  test('should throw an exception for a negative number', () => {
     expect(()=>add('2,-4')).toThrow("negative numbers not allowed");
+  });
+});
+
+describe('Calculator', () => {
+  test('should throw an exception for a negative number', () => {
+    expect(()=>add('-1')).toThrow("negative numbers not allowed");
   });
 });
