@@ -66,3 +66,11 @@ describe('Calculator', () => {
     expect(()=>add('//;\n-1;2')).toThrow("negative numbers not allowed");
   });
 });
+
+describe('Calculator', () => {
+  test('numbers greater than 1000 are ignored', () => {
+    expect(add('2,1001')).toBe(2);
+  });
+});
+
+
