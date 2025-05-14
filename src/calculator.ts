@@ -2,8 +2,11 @@ export function add(numbers:string){
     
     if(!numbers) return 0
 
-    if(numbers.startsWith('//')){
-       numbers = numbers.substring(4).replace(';',',') 
+    const match = numbers.match(/^\/\/(.+)\n(.*)/);
+
+    if(match){
+        let delimiters = match[1]
+        numbers = numbers.substring(4).replace(delimiters,',') 
     }
 
     const inputs = numbers.replace(/\n/g,',').split(',')

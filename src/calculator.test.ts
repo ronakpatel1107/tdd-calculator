@@ -44,6 +44,6 @@ describe('Calculator', () => {
 
 describe('Calculator', () => {
   test('should handle custom delimiters and return the sum of all the numbers', () => {
-    expect(add('//;\n1;2"')).toBe(3); 
+    expect(add('//;\n1;2')).toBe(3); 
   });
 });
